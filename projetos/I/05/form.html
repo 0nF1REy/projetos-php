@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Formulários</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <form action="superglobais.php?tipo=Aluno&curso=Quimica" method="post">
+            <label for="usurio">Usuário</label>
+            <input type="text" name="usuario" id="usuario" autocomplete="off" required pattern="^[a-zA-Z0-9]+$"
+                minlength="7" maxlength="17" title="O usuário deve conter apenas letras e números.">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required pattern="^[a-zA-Z0-9]+$" minlength="8"
+                maxlength="32" title="A senha deve conter apenas letras e números.">
+            <input type="submit" value="Entrar">
+
+        </form>
+    </main>
+</body>
+
+</html>
